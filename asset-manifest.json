@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my-ts-app-ToDoList-onReduxToolKit/static/css/main.1cdf326d.css",
+    "main.js": "/my-ts-app-ToDoList-onReduxToolKit/static/js/main.cfbd7b62.js",
+    "static/js/592.7f72a991.chunk.js": "/my-ts-app-ToDoList-onReduxToolKit/static/js/592.7f72a991.chunk.js",
+    "index.html": "/my-ts-app-ToDoList-onReduxToolKit/index.html",
+    "main.1cdf326d.css.map": "/my-ts-app-ToDoList-onReduxToolKit/static/css/main.1cdf326d.css.map",
+    "main.cfbd7b62.js.map": "/my-ts-app-ToDoList-onReduxToolKit/static/js/main.cfbd7b62.js.map",
+    "592.7f72a991.chunk.js.map": "/my-ts-app-ToDoList-onReduxToolKit/static/js/592.7f72a991.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cdf326d.css",
+    "static/js/main.cfbd7b62.js"
+  ]
+}
