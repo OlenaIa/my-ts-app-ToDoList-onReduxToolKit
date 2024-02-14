@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FC, FormEvent,ChangeEvent } from 'react';
-import { FuncType } from "../App/App.types";
+import { FuncType } from "../../redux/toDoSlice";
 import './Form.css'
 
 interface IFormProps {

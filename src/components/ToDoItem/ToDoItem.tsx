@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ToDoItemType, FuncType } from '../App/App.types'
+import { ToDoItemType, FuncType } from '../../redux/toDoSlice'
 import './ToDoItem.css';
 
 interface IToDoItemProps {

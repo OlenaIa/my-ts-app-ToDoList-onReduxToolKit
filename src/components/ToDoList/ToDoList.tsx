@@ -1,4 +1,4 @@
-import { ToDoItemType, FuncType } from "../App/App.types";
+import { ToDoItemType, FuncType } from "../../redux/toDoSlice";
 import { ToDoItem } from "../ToDoItem";
 import { FC } from 'react';
 import './ToDoList.css'

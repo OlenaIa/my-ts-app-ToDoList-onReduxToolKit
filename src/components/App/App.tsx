@@ -1,32 +1,22 @@
-import { useState } from "react";
 import { ToDoList } from "../ToDoList";
 import { Form } from "../Form";
-import { nanoid } from "nanoid";
-import { ToDoItemType, FuncType } from "./App.types";
 import './App.css';
+import {useSelector, useDispatch} from 'react-redux'
+import {addTodo, delTodo} from '../../redux/toDoSlice'
+import { RootState } from '../../redux/store';
 
 export function App() {
-    const [toDoList, setToDoList] = useState<ToDoItemType[]>([]);
-
-    const addToDo: FuncType = (newTextTodo) => {
-        const newToDo: ToDoItemType = { id: nanoid(3), toDoText: newTextTodo };
-        console.log('newToDo', newToDo);
-        setToDoList([...toDoList, newToDo])
-    };
-
-    const delToDo: FuncType = (idToDo) => {
-        const refreshToDoList = toDoList.filter(item => item.id !== idToDo);
-        setToDoList(refreshToDoList);
-    };
+    const toDoList = useSelector((state: RootState) => state.todos);
+    const dispatch = useDispatch();
 
     return (
         <>
             <header className="header">
-                <h1 className="title">Todo List</h1>
+                <h1 className="title">Todo List on Redux ToolKit</h1>
             </header>
             <main className="main">
-                <Form addToDo={addToDo} />
-                <ToDoList toDoList={toDoList} delToDo={delToDo} />
+                <Form addToDo={(text) => dispatch(addTodo(text))} />
+                <ToDoList toDoList={toDoList} delToDo={(id) => dispatch(delTodo(id))} />
             </main>
         </>
     );
