@@ -1,18 +1,17 @@
 import { useState } from "react";
 import { FC, FormEvent,ChangeEvent } from 'react';
-import { FuncType } from "../../redux/toDoSlice";
+// import { FuncType } from "../../redux/toDoSlice";
+import {useDispatch} from 'react-redux'
+import {addTodo} from '../../redux/toDoSlice'
 import './Form.css'
 
-interface IFormProps {
-    addToDo: FuncType;
-};
-
-export const Form: FC<IFormProps> = ({ addToDo }) => {
+export const Form: FC = () => {
     const [newToDoItem, setNewToDoItem] = useState<string>('');
+    const dispatch = useDispatch();
 
     function onSubmit(e: FormEvent) {
         e.preventDefault();
-        addToDo(newToDoItem);
+        dispatch(addTodo(newToDoItem));
         setNewToDoItem('');
     };
 
