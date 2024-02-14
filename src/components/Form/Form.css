@@ -1,0 +1,24 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    gap: 20px;
+}
+
+.input {
+    overlay: none;
+    padding: 12px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.button-submit {
+    background-color: rgb(75, 196, 233);
+    overlay: none;
+    border: none;
+    padding: 12px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+}

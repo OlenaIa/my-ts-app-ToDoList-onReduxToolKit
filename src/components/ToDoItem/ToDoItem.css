@@ -1,0 +1,23 @@
+.item {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    gap: 20px;
+    align-items: center;
+}
+
+.task {
+    height: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.button-delete {
+    height: 40px;
+    background-color: rgb(200, 210, 212);
+    overlay: none;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+}
